@@ -1,0 +1,54 @@
+{
+  "name": "cognac-react",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://varshitakolipaka.github.io/cognac",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.3.0",
+    "@mui/material": "^6.3.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.17.1",
+    "better-react-mathjax": "^2.0.4-beta1",
+    "d3": "^7.9.0",
+    "lucide-react": "^0.469.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "5.0.1",
+    "react-twitter-embed": "^4.0.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.3.0"
+  }
+}
