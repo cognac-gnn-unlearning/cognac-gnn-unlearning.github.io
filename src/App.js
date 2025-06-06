@@ -137,20 +137,31 @@ const PaperWebsite = () => {
             <Button
               variant="contained"
               startIcon={<Description />}
+              href="https://arxiv.org/abs/2412.00789"
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{ backgroundColor: '#333333', borderRadius: '20px', textTransform: 'none' }}
             >
               Paper
             </Button>
+
             <Button
               variant="contained"
               startIcon={<GitHub />}
+              href="https://github.com/cognac-gnn-unlearning/corrective-unlearning-for-gnns"
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{ backgroundColor: '#333333', borderRadius: '20px', textTransform: 'none' }}
             >
               Code
             </Button>
+
             <Button
               variant="contained"
               startIcon={<Image />}
+              href="https://drive.google.com/file/d/1h4P9xqC5AvuTW7mhwNvCSxeGo56rZRJW/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{ backgroundColor: '#333333', borderRadius: '20px', textTransform: 'none' }}
             >
               Poster
@@ -195,7 +206,7 @@ const PaperWebsite = () => {
 
           </MathJaxContext>
 
-          
+
 
 
 
@@ -222,45 +233,45 @@ const PaperWebsite = () => {
         </Paper>
 
         <MathJaxContext config={config}>
-            
 
-            <Typography variant="h6" gutterBottom sx={{ mt: 4 }}>
-              Adversary's Perspective
-            </Typography>
 
-            <Typography paragraph>
-              The adversary aims to reduce model accuracy by manipulating the training data <MathJax inline>{"$\\mathcal{G}$"}</MathJax>.
-              This can be done by:
-            </Typography>
+          <Typography variant="h6" gutterBottom sx={{ mt: 4 }}>
+            Adversary's Perspective
+          </Typography>
 
-            <Typography component="div" sx={{ pl: 3 }}>
-              <ul>
-                <li>
-                  <Typography paragraph>
-                    Adding spurious edges <MathJax inline>{"$\\mathcal{E}$"}</MathJax>, resulting in <MathJax inline>{"$\\mathcal{G}' = \\mathcal{E} \\cup \\mathcal{G}$"}</MathJax>
-                  </Typography>
-                </li>
-                <li>
-                  <Typography paragraph>
-                    Manipulating node information <MathJax inline>{"$V' = f_m(V)$"}</MathJax>, where <MathJax inline>{"$f_m$"}</MathJax> modifies node features or labels
-                  </Typography>
-                </li>
-              </ul>
-            </Typography>
+          <Typography paragraph>
+            The adversary aims to reduce model accuracy by manipulating the training data <MathJax inline>{"$\\mathcal{G}$"}</MathJax>.
+            This can be done by:
+          </Typography>
 
-            <Typography variant="h6" gutterBottom sx={{ mt: 4 }}>
-              Unlearner's Perspective
-            </Typography>
+          <Typography component="div" sx={{ pl: 3 }}>
+            <ul>
+              <li>
+                <Typography paragraph>
+                  Adding spurious edges <MathJax inline>{"$\\mathcal{E}$"}</MathJax>, resulting in <MathJax inline>{"$\\mathcal{G}' = \\mathcal{E} \\cup \\mathcal{G}$"}</MathJax>
+                </Typography>
+              </li>
+              <li>
+                <Typography paragraph>
+                  Manipulating node information <MathJax inline>{"$V' = f_m(V)$"}</MathJax>, where <MathJax inline>{"$f_m$"}</MathJax> modifies node features or labels
+                </Typography>
+              </li>
+            </ul>
+          </Typography>
 
-            <Typography paragraph>
-             The objective is to remove the influence of manipulated training data <MathJax inline>{"$S_m$"}</MathJax> while
-              maintaining performance on clean data.
-            </Typography>
+          <Typography variant="h6" gutterBottom sx={{ mt: 4 }}>
+            Unlearner's Perspective
+          </Typography>
 
-            <Box sx={{ my: 3, display: 'flex', justifyContent: 'center' }}>
-              <MathJax>{"$S_f$ must be a representative subset of $S_m$. The unlearning method $f_u(\\mathcal{M},S_f,\\mathcal{G}')$ should maximize accuracy on clean samples while improving robustness against manipulation."}</MathJax>
-            </Box>
-          </MathJaxContext>
+          <Typography paragraph>
+            The objective is to remove the influence of manipulated training data <MathJax inline>{"$S_m$"}</MathJax> while
+            maintaining performance on clean data.
+          </Typography>
+
+          <Box sx={{ my: 3, display: 'flex', justifyContent: 'center' }}>
+            <MathJax>{"$S_f$ must be a representative subset of $S_m$. The unlearning method $f_u(\\mathcal{M},S_f,\\mathcal{G}')$ should maximize accuracy on clean samples while improving robustness against manipulation."}</MathJax>
+          </Box>
+        </MathJaxContext>
 
         {/* Method Section */}
         <Paper elevation={0} sx={{ p: 1, mb: 4 }}>
