@@ -27,7 +27,7 @@ const PaperWebsite = () => {
   const [showCopied, setShowCopied] = useState(false);
 
   useEffect(() => {
-    document.title = 'A Cognac Shot';
+    document.title = 'Graph Unlearning with Cognac';
   }, []);
 
   const authors = [
